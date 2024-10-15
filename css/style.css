@@ -18,7 +18,7 @@ img {
 
 /* Side-bar */
 .side-bar {
-    width: 150px;
+    width: 200px;
     position: relative;
     background-color: black;
     padding: 20px ;
@@ -40,5 +40,39 @@ a {
     padding-bottom: 10px;
     color: white;
     font-size: large;
+}
+
+.download {
+    position: absolute;
+    margin-top: 200px;
+}
+
+.account {
+    color: white;
+}
+
+.big-box {
+    width: calc(100% - 100px);
+    background-color: rgb(24, 24, 63);
+}
+
+.row {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(14, 14, 39);
+}
+
+.upgrade-button {
+    padding: 5px;
+    border-radius: 30%;
+    background-color:  rgb(14, 14, 39);
+    border: 1px solid white;
+    color: white;
+    margin-left: 90%;
+}
+
+.music-bar {
+    height: 100px;
+    background-color: rgb(40, 40, 40);
 }
 
