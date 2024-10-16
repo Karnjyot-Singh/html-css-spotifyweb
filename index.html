@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-    <!-- Main -->
-    <main class="wrapper">
+    <div class="wrapper">
+        <!-- Top app  -->
+         <main class="top-app">
+            <!-- Side-bar  -->
+             <nav class="side-bar">
+                <div class="logo"><img src="./spotify/img/logo.svg" alt=""></div>
+                <div class="side-bar-elements">
+                    <ul>
+                        <li><a href=""><span class="none">Home</span></a></li>
+                        <li><a href=""><span class="none">Cerca</span></a></li>
+                        <li><a href=""><span class="none">La tua Libreria</span></a></li>
+                    </ul>
+                </div>
 
-        <!-- Sidebar -->
-        <section class="side-bar">
-            <div class="logo">
-                <img class="none" src="./spotify/img/logo.svg" alt="LOGO">
-            </div>
-            <div class="side-bar-elements">
-                <ul>
-                    <li><a href=""><span class="none">Home</span></a></li>
-                    <li><a href=""><span class="none">Cerca</span></a></li>
-                    <li><a href=""><span class="none">La tua Libreria</span></a></li>
-                </ul>
-            </div>
-            <!-- playlist -->
+                <!-- playlist -->
             <div class="playlist">
                 <h2 class="playlist-title">PLAYLIST</h2>
                 <a href="">Crea Playlist</a>
@@ -45,31 +42,59 @@
                 <strong class="account">Jon Doe</strong>
             </div>
             <!-- /Download-Account -->
-        </section>
-         <!-- /Sidebar -->
+             </nav>
+            <!-- Side-bar  -->
 
-        <!-- Big-Box -->
-        <div class="big-box">
-            <div class="row">
-                <button class="upgrade-button">EFFETTUA L'UPGRADE</button>
-            </div>
-        </div>
-        <!-- /Big-Box -->
-    </main>
-    <!-- /Main -->
+            <!-- Content  -->
+             <main class="content">
+                <header class="header">
+                    <a href="">EFFETTUA L'UPGRADE</a>
+                </header>
+                <div class="main-content">
+                    <h2>Recently Played</h2>
+                    <div class="row">
+                        <div class="col">
+                            <img src="./spotify/img/metal_lifting.jpg" alt="">
+                            <div class="content-title"><strong>Heavy Metal</strong></div>
+                            <div class="subtitle">Subtitile</div>
+                        </div>
+                        <div class="col">
+                            <img src="./spotify/img/stranger.jpeg" alt="">
+                            <div class="content-title"><strong>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</strong></div>
+                            <div class="subtitle">Kyle Dixon & Michale Stein</div>
+                        </div>
+                        <div class="col">
+                            <img src="./spotify/img/aquietplace.jpeg" alt="">
+                            <div class="content-title"><strong>A quiet place</strong></div>
+                            <div class="subtitle">Subtitile</div>
+                        </div>
+                        <div class="col">
+                            <img src="./spotify/img/split.jpeg" alt="">
+                            <div class="content-title"><strong>Split</strong></div>
+                            <div class="subtitle">Subtitile</div>
+                        </div>
+                        <div class="col">
+                            <img src="./spotify/img/cure.jpeg" alt="">
+                            <div class="content-title"><strong>A cure for wellness</strong></div>
+                            <div class="subtitle">Subtitile</div>
+                        </div>
+                        <div class="col">
+                            <img src="./spotify/img/sinister.jpeg" alt="">
+                            <div class="content-title"><strong>Sinister</strong></div>
+                            <div class="subtitle">Subtitile</div>
+                        </div>
+                    </div>               
+                </div>
+             </main>
+             <!-- /Content  -->
+         </main>
+        <!-- /Top app  -->
+
+        <!-- Actions bar -->
+         <footer class="action-bar"></footer>
+        <!-- Actions bar -->
 
 
-    <!-- Footer -->
-    <footer>
-        <div class="music-bar">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </footer>
-    <!-- /Footer-->
-
-
-
+    </div>
 </body>
 </html>
