@@ -1,3 +1,9 @@
+/* CUSTOM PROPERTIES  */
+:root {
+    --footer-height: 100px;
+    --side-bar-width: 250px;
+}
+
 /* RESET */
 * {
     margin: 0;
@@ -9,22 +15,69 @@ img {
     max-width: 100%;
 }
 
-/* MAIN */
 .wrapper {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100vh;
+
+}
+
+.top-app {
+    height: calc(100% - var(--footer-height));
     display: flex;
-}
-
-/* Side-bar */
-.side-bar {
-    width: 200px;
-    position: relative;
     background-color: black;
-    padding: 20px ;
-    line-height: 30px;
 }
 
+.action-bar {
+    height: var(--footer-height);
+    background-color: rgb(60, 59, 59);
+
+}
+
+.side-bar {
+   width: var(--side-bar-width);
+
+   /* debug  */
+   border: 1px solid black;
+   min-height: 200px;
+}
+
+.content {
+   width: calc(100% - var(--side-bar-width));
+    /* debug  */
+    border: 1px solid black;
+     min-height: 200px;
+
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - var(--side-bar-width));
+    padding: 20px;
+    background-color: rgb(10, 10, 67);
+}
+
+.main-content {
+    background-color: rgb(32, 32, 46);
+    height: 100%;
+    padding-top: 70px;
+    overflow-y: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: calc(100% / 6);
+    padding: 20px;
+
+    /* debug  */
+    border: 1px solid black;
+    min-height: 200px;
+}
 
 ul {
     list-style: none;
@@ -44,35 +97,45 @@ a {
 
 .download {
     position: absolute;
-    margin-top: 200px;
+    margin-top: 330px;
 }
 
 .account {
     color: white;
+    
 }
 
-.big-box {
-    width: calc(100% - 100px);
-    background-color: rgb(24, 24, 63);
+.side-bar-elements {
+    margin-top: 20px;
 }
 
-.row {
-    height: 50px;
-    width: 100%;
-    background-color: rgb(14, 14, 39);
-}
-
-.upgrade-button {
-    padding: 5px;
-    border-radius: 30%;
-    background-color:  rgb(14, 14, 39);
-    border: 1px solid white;
+h2 {
     color: white;
-    margin-left: 90%;
+    padding-bottom: 20px;
 }
 
-.music-bar {
-    height: 100px;
-    background-color: rgb(40, 40, 40);
+.content-title {
+    color: white;
 }
 
+.subtitle {
+    color: rgb(192, 192, 192);
+}
+
+/**************/
+/* Media query */
+/**************/
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 425px) {
+    :root {
+        --side-bar-width: 80px;
+    }
+}
